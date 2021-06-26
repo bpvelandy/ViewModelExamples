@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home_graph"
+    app:startDestination="@id/HomeFragment">
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.bpv.vmapplication.HomeFragment"
+        android:label="@string/home_fragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_HomeFragment_to_oneFragment"
+            app:destination="@id/oneFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_oneNavShareFragment"
+            app:destination="@id/navigation" />
+        <action
+            android:id="@+id/action_HomeFragment_self"
+            app:destination="@id/HomeFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_oneShareFragment3"
+            app:destination="@id/oneShareFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/oneFragment"
+        android:name="com.bpv.vmapplication.normal.fragment.OneFragment"
+        android:label="@string/fragment_one"
+        tools:layout="@layout/fragment_one">
+        <action
+            android:id="@+id/action_oneFragment_to_twoFragment"
+            app:destination="@id/twoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/threeFragment"
+        android:name="com.bpv.vmapplication.normal.fragment.ThreeFragment"
+        android:label="@string/fragment_three"
+        tools:layout="@layout/fragment_three" />
+    <fragment
+        android:id="@+id/twoFragment"
+        android:name="com.bpv.vmapplication.normal.fragment.TwoFragment"
+        android:label="@string/fragment_two"
+        tools:layout="@layout/fragment_two">
+        <action
+            android:id="@+id/action_twoFragment_to_threeFragment"
+            app:destination="@id/threeFragment" />
+    </fragment>
+    <navigation
+        android:id="@+id/navigation"
+        app:startDestination="@id/oneNavShareFragment">
+        <fragment
+            android:id="@+id/oneNavShareFragment"
+            android:name="com.bpv.vmapplication.nav.fragment.OneNavShareFragment"
+            android:label="@string/fragment_one"
+            tools:layout="@layout/fragment_nav_share_one">
+            <action
+                android:id="@+id/action_oneNavShareFragment_to_twoNavShareFragment"
+                app:destination="@id/twoNavShareFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/twoNavShareFragment"
+            android:name="com.bpv.vmapplication.nav.fragment.TwoNavShareFragment"
+            android:label="@string/fragment_two"
+            tools:layout="@layout/fragment_nav_share_two">
+            <action
+                android:id="@+id/action_twoNavShareFragment_to_threeNavShareFragment"
+                app:destination="@id/threeNavShareFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/threeNavShareFragment"
+            android:name="com.bpv.vmapplication.nav.fragment.ThreeNavShareFragment"
+            android:label="@string/fragment_three"
+            tools:layout="@layout/fragment_nav_share_three" />
+    </navigation>
+    <fragment
+        android:id="@+id/oneShareFragment3"
+        android:name="com.bpv.vmapplication.share.fragment.OneShareFragment"
+        android:label="@string/fragment_one"
+        tools:layout="@layout/fragment_share_one">
+        <action
+            android:id="@+id/action_oneShareFragment3_to_twoShareFragment3"
+            app:destination="@id/twoShareFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/twoShareFragment3"
+        android:name="com.bpv.vmapplication.share.fragment.TwoShareFragment"
+        android:label="@string/fragment_two"
+        tools:layout="@layout/fragment_share_two">
+        <action
+            android:id="@+id/action_twoShareFragment3_to_threeShareFragment2"
+            app:destination="@id/threeShareFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/threeShareFragment2"
+        android:name="com.bpv.vmapplication.share.fragment.ThreeShareFragment"
+        android:label="@string/fragment_three"
+        tools:layout="@layout/fragment_share_three" />
+
+
+</navigation>

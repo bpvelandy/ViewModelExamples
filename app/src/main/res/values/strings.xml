@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">VM Test Application</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="add">Add</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="number">Number</string>
+    <string name="activity_shared_view_model">Activity Shared View Model</string>
+    <string name="types_of_view_model_options">Types of view model options</string>
+    <string name="nav_shared_view_model">Nav Shared View Model</string>
+    <string name="view_model">View Model</string>
+    <string name="home_fragment">Home fragment</string>
+    <string name="fragment_one">Fragment One</string>
+    <string name="fragment_two">Fragment Two</string>
+    <string name="fragment_three">Fragment three</string>
+</resources>
